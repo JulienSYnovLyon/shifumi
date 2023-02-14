@@ -1,0 +1,95 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Vollkorn', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 32px;
+  color: #333;
+}
+
+.result {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  font-size: 28px;
+  color: #333;
+}
+
+.player-choice {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-choice button {
+  background-color: lightblue;
+}
+
+.player-choice button:not([disabled]) {
+  background-color: #fff;
+}
+
+.player-choice:last-child {
+  grid-column: 3 / 4;
+}
+
+.weapon-choice {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 36px;
+  color: #333;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.weapon-choice:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.fa-hand-rock,
+.fa-hand-paper,
+.fa-hand-scissors {
+  display: inline-block;
+}
+
+.reset-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

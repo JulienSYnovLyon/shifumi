@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jeu du Shifumi</title>
+  <link rel="stylesheet" href="game.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="grid">
+    <header class="grid-item header">
+      <h1>Jeu du Shifumi</h1>
+    </header> 
+
+    <section class="grid-item result">
+      <h3>Au tour du joueur 1</h3>
+    </section>
+  
+    <section class="grid-item player-choice player-1 active" style="background-color: lightblue;">
+      <h3>Joueur 1</h3>
+      <button id="pierre" class="weapon-choice"><i class="far fa-hand-rock"></i></button>
+      <button id="papier" class="weapon-choice"><i class="far fa-hand-paper"></i></button>
+      <button id="ciseaux" class="weapon-choice"><i class="far fa-hand-scissors"></i></button>
+    </section>
+    
+    <section class="grid-item player-choice player-2" style="background-color: white;"> 
+      <h3>Joueur 2</h3>
+      <button id="pierre" class="weapon-choice"><i class="far fa-hand-rock"></i></button>
+      <button id="papier" class="weapon-choice"><i class="far fa-hand-paper"></i></button>
+      <button id="ciseaux" class="weapon-choice"><i class="far fa-hand-scissors"></i></button>
+    </section>
+
+  </div>
+
+<script src="game.js"></script>
+    
+</body>
+</html>
